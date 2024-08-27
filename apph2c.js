@@ -17,6 +17,7 @@ function onRequest(req, res) {
   // 파일이 존재하는지 확인
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
+      console.log('file path: ',filePath) 
       res.writeHead(404, { 'Content-Type': 'text/plain' });
       res.end('File not found');
       return;
