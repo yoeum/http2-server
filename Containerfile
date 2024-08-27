@@ -16,7 +16,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest
 # Install app dependencies
 COPY --from=0 /opt/app-root/src/node_modules /opt/app-root/src/node_modules
 
-#ENV NODE_ENV production
+ENV NODE_ENV develpement
 #ENV PORT 3001
 
 CMD ["npm", "start"]
