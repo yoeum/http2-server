@@ -13,7 +13,7 @@ function onRequest(req, res) {
 
   // 이미지 파일 경로 설정
   const filePath = path.join(__dirname, 'images', filename);
-  console.log('file path: ',filePath) 
+  console.log('Requested file path:', filePath);
 
   // 파일이 존재하는지 확인
   fs.access(filePath, fs.constants.F_OK, (err) => {
