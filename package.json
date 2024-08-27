@@ -2,9 +2,9 @@
   "name": "http2-server",
   "version": "1.0.0",
   "description": "A simple HTTP/2 server with Node.js",
-  "main": "appv3.js",
+  "main": "app-http2only.js",
   "scripts": {
-    "start": "node appv3.js"
+    "start": "node app-http2only.js"
   },
   "dependencies": {}
 }
