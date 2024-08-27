@@ -12,7 +12,9 @@ function onRequest(req, res) {
   const filename = req.url.substring(1) || 'default.jpg';
    console.log('Requested file name:', filename);
   // 이미지 파일 경로 설정
-  const filePath = path.join(__dirname, 'images', filename);
+ const filePath = path.join('/opt/app-root/src', filename);
+
+  // 파일 경로를 콘솔에 로깅
   console.log('Requested file path:', filePath);
 
   // 파일이 존재하는지 확인
