@@ -15,7 +15,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest
 
 # Install app dependencies
 COPY --from=0 /opt/app-root/src/node_modules /opt/app-root/src/node_modules
-COPY . /opt/app-root/src
+COPY . /opt/app-root/src && COPY ./*.jpg /opt/app-root/src/images/
 
 #ENV NODE_ENV production
 #ENV PORT 3001
