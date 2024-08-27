@@ -6,7 +6,7 @@ const path = require('path');
 // 요청을 처리하는 함수
 function onRequest(req, res) {
   // 요청 헤더를 콘솔에 로깅
-  console.log('Received request headers:', req.headers);
+  console.log('1 Received request headers:', req.headers);
 
   // 요청된 파일 이름을 추출
   const filename = req.url.substring(1) || 'default.jpg';
