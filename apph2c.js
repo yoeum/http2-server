@@ -10,7 +10,7 @@ function onRequest(req, res) {
 
   // 요청된 파일 이름을 추출
   const filename = req.url.substring(1) || 'default.jpg';
-
+   console.log('Requested file name:', filename);
   // 이미지 파일 경로 설정
   const filePath = path.join(__dirname, 'images', filename);
   console.log('Requested file path:', filePath);
