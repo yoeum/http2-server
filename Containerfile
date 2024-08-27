@@ -1,4 +1,5 @@
 # Install the app dependencies in a full Node docker image
+# for appv3
 FROM registry.access.redhat.com/ubi8/nodejs-18:latest
 
 # Copy package.json, and optionally package-lock.json if it exists
